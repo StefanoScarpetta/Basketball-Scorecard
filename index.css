@@ -1,0 +1,56 @@
+body {
+    background-image: url(basket.jpg);
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction:column; 
+    justify-content:center;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    height: 335px;
+    border: 3px solid black;
+    border-radius: 15%;
+    background-color: goldenrod;
+    opacity: 0.7;
+    text-align: center;
+}
+.newGame {
+    text-align: center;
+    margin: 35px;
+    margin-top: 70px;
+    border-radius: 0;
+}
+button {
+    font-size: 20px;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    border-radius: 25%;
+    border: 2px solid black;
+}
+p {
+    font-size: 25px;
+    margin-top: -15px;
+    color: white;
+}
+h3 {
+    font-size: 35px;
+    color: white;
+}
+h2 {
+    padding: 15px;
+    background-color: red;
+    color: blue;
+    font-size: 40px;
+}
+#time {
+    padding: 15px;
+    background-color: red;
+    color: blue;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
