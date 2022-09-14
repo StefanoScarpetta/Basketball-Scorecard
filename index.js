@@ -6,35 +6,52 @@ punteggioGuest.innerText = 0
 time.innerText = "00:00:00"
 
 function newGame() {
-    punteggioHome.innerText = 0
-    punteggioGuest.innerText = 0
-    time.innerText = "00:00:00"
     location.reload()
+}
+function cambioColore() {
+    document.getElementById("home").style.color = "white"
+    document.getElementById("guest").style.color = "white"
+    document.getElementById("phome").innerText = ""
+    document.getElementById("pguest").innerText = ""
+    if(parseInt(punteggioHome.innerText) > parseInt(punteggioGuest.innerText)) {
+        document.getElementById("home").style.color = "red"
+        document.getElementById("phome").innerText = "Vantaggio"
+    }
+    else {
+        document.getElementById("guest").style.color = "red"
+        document.getElementById("pguest").innerText = "Vantaggio"
+    }
 }
 
 function unoHome() {
     risultato = parseInt(punteggioHome.innerText) + 1
     punteggioHome.innerText = risultato
+    cambioColore()
 }
 function dueHome() {
     risultato = parseInt(punteggioHome.innerText) + 2
     punteggioHome.innerText = risultato
+    cambioColore()
 }
 function treHome() {
     risultato = parseInt(punteggioHome.innerText) + 3
     punteggioHome.innerText = risultato
+    cambioColore()
 }
 function unoGuest() {
     risultato = parseInt(punteggioGuest.innerText) + 1
     punteggioGuest.innerText = risultato
+    cambioColore()
 }
 function dueGuest() {
     risultato = parseInt(punteggioGuest.innerText) + 2
     punteggioGuest.innerText = risultato
+    cambioColore()
 }
 function treGuest() {
     risultato = parseInt(punteggioGuest.innerText) + 3
     punteggioGuest.innerText = risultato
+    cambioColore()
 }
 
 var ore=0;
