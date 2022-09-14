@@ -7,6 +7,13 @@ time.innerText = "00:00:00"
 
 function newGame() {
     location.reload()
+    //console.time("querySelector")
+    //document.querySelector("#home")
+    //console.timeLog("querySelector")
+    //document.querySelector("#guest")
+    //console.timeLog("querySelector")
+    //document.querySelector("#phome")
+    //console.timeEnd("querySelector")
 }
 function cambioColore() {
     document.getElementById("home").style.color = "white"
@@ -18,7 +25,7 @@ function cambioColore() {
         document.getElementById("phome").innerText = "Vantaggio"
     }
     else {
-        document.getElementById("guest").style.color = "red"
+        document.querySelector("#guest").style.color = "red"
         document.getElementById("pguest").innerText = "Vantaggio"
     }
 }
